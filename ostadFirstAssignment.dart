@@ -8,27 +8,9 @@ void main() {
     '01887788771'
   ];
 
-  String bdCountryCode = '';
-  //this loop search the +88 in the list and put it in the bdCountryCode variable
-
-  for (int i = 0; i < phoneNumber.length; i++) {
-    if (phoneNumber[i].contains('+88')) {
-      bdCountryCode = phoneNumber[i];
-      break;
-    }
-  }
-
-  //this loop add +88 infront of every number except +88
-  for (int i = 0; i < phoneNumber.length; i++) {
-    if (phoneNumber[i] != bdCountryCode) {
-      phoneNumber[i] = '+88${phoneNumber[i]}';
-    }
-  }
-
-  //this loop print the list without +88
-  for (String number in phoneNumber) {
-    if (number != bdCountryCode) {
-      print(number);
-    }
-  }
+  print(phoneNumber[0] + phoneNumber[1]);
+  print(phoneNumber[0] + phoneNumber[2]);
+  print(phoneNumber[0] + phoneNumber[3]);
+  print(phoneNumber[0] + phoneNumber[4]);
+  print(phoneNumber[0] + phoneNumber[5]);
 }
